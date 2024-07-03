@@ -1,0 +1,86 @@
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    padding: 15px 100px;
+    height: 100px;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+}
+
+ul{
+    flex: 1;
+    list-style: None;
+    text-align: center;
+}
+
+ul li{
+    display: inline-block;
+    margin: 10px 20px;
+    font-size: 24px;
+    cursor: pointer;
+    line-height: 29.26px;
+    color: #121212;
+    font-weight: 500;
+}
+
+.love-icon{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    display: inline-block;
+    position: relative;
+}
+
+
+.love-icon:hover .heart-overlay{
+    background-color: rgba(255, 0, 0, 0.5);
+}
+
+.shopping-icon{
+    width: 26.67;
+    height: 33.33px;
+    cursor: pointer;
+}
+
+.shopping-icon:hover {
+    filter: hue-rotate(90deg);
+}
+
+
+.right-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.search-box input{
+    outline: 0;
+    border: none;
+    flex-grow: 1;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 366px;
+    height: 48px;
+    gap: 10px;
+    border: 2px, solid, #121212;
+}
+
+.search-icon{
+    /* position: absolute; */
+    color: #888;
+    /* margin-left: 10px; */
+    width: 24px;
+    height: 24px;
+}
