@@ -4,7 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+    <script>
+      !(function () {
+        let e = document.createElement("script"),
+          t = document.head || document.getElementsByTagName("head")[0];
+        (e.src = "https://cdn.jsdelivr.net/npm/rasa-webchat/lib/index.js"),
+          // Replace 1.x.x with the version that you want
+          (e.async = !0),
+          (e.onload = () => {
+            window.WebChat.default(
+              {
+                initPayload: "/greet",
+                customData: { language: "en" },
+                socketUrl: "http://127.0.0.1:5005",
+                title: "Sang Shop Bot",
+                subtitle: "Bạn hỏi tôi trả lời..",
+                showMessageDate: true,
+                inputTextFieldHint: "Bạn đang nghĩ gì?...",
+  
+                // add other props here
+              },
+              null
+            );
+          }),
+          t.insertBefore(e, t.firstChild);
+      })();
+      localStorage.clear();
+  </script>
+    <title>Sang Shop</title>
   </head>
   <body>
     <div id="root"></div>
